@@ -28,6 +28,7 @@
 	          <span class="sr-only">Toggle Menu</span>
 	        </button>
         </div>
+
 				<div class="p-4 pt-5">
 		  		<h5 style="color: white"><a class="logo" style="color: white">Geo-spatial Map</a></h5>
                     <div>
