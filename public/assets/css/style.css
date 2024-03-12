@@ -8207,8 +8207,8 @@ h1, h2, h3, h4, h5,
   width: 100%; }
 
 #sidebar {
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 400px;
+  max-width: 400px;
   background: #866ec7;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -8218,7 +8218,7 @@ h1, h2, h3, h4, h5,
   #sidebar .h6 {
     color: #fff; }
   #sidebar.active {
-    margin-left: -250px; }
+    margin-left: -400px; }
     #sidebar.active .custom-menu {
       margin-right: -50px; }
   #sidebar h1 {
@@ -8236,7 +8236,7 @@ h1, h2, h3, h4, h5,
         font-size: 14px; }
     #sidebar ul li a {
       padding: 10px 0;
-      display: block;
+      /*display: block;*/
       color: rgba(255, 255, 255, 0.8);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
       #sidebar ul li a:hover {
@@ -8246,7 +8246,7 @@ h1, h2, h3, h4, h5,
       color: #fff; }
   @media (max-width: 991.98px) {
     #sidebar {
-      margin-left: -250px; }
+      margin-left: -400px; }
       #sidebar.active {
         margin-left: 0; }
       #sidebar .custom-menu {
@@ -8271,11 +8271,11 @@ h1, h2, h3, h4, h5,
       height: 40px;
       border-radius: 50%; }
       #sidebar .custom-menu .btn.btn-primary {
-        background: #6749b9;
-        border-color: #6749b9; }
+        background: #d87c0a;
+        border-color: #d87c0a; }
         #sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
-          background: #6749b9 !important;
-          border-color: #6749b9 !important; }
+          background: #d87c0a !important;
+          border-color: #d87c0a !important; }
 
 a[data-toggle="collapse"] {
   position: relative; }
@@ -8335,3 +8335,7 @@ a[data-toggle="collapse"] {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3); }
 #map { height: 100vh; }
+.list-group-item {
+    background-color: transparent !important;
+    /*border: none !important;*/
+}

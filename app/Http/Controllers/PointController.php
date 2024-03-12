@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Capability;
 use App\Models\Point;
+use App\Models\Country;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
 class PointController extends Controller
 {
     public function index(){
-        $points = Point::all();
-        return view('index',compact('points'));
+        $capabilities= Capability::select('id','name')->get();
+        $countries = Country::select('id','name','latitude','longitude')->whereNotNull('name')->get();
+
+        return view('index',compact('countries','capabilities'));
     }
     public function fetchGeoserverData(Request $request)
     {

@@ -15,8 +15,9 @@ use App\Http\Controllers\PointController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
-Route::get('/points', [PointController::class, 'index'])->name('maps-index');
+Route::get('/index', [PointController::class, 'index'])->name('maps-index');
+//Route::get('/points', [PointController::class, 'index'])->name('maps-index');
 Route::get('/fetch-geoserver-data', [PointController::class, 'fetchGeoserverData'])->name('countryRegionDetail');
 
